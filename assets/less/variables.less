@@ -1,0 +1,106 @@
+
+// base
+@base-font-family: 'IBM Plex Sans', 'IBM Plex Sans Local', Roboto, 'Noto Sans', Ubuntu, Cantarell,
+  'Helvetica Neue', sans-serif;
+@base-font-size: 15px;
+@base-line-height: 1.4;
+@base-color: #000;
+
+// colors 
+@color-white: #fff;
+@color-yellow-600: #FFB900;
+@color-yellow-700: #F0AE00;
+@color-gray-100: #F4F2EB;
+@color-gray-200: #BBB9B8;
+@color-gray-600: #343642;
+@color-gray-700: #252733;
+@color-primary: #000;
+
+:root {
+  --color-primary: #000;
+  --color-secondary: @color-gray-600;
+  // backgrounds
+  --bg-body: #f4f4f4;
+  --bg-primary: @color-white;
+  --bg-secondary: @color-gray-700;
+}
+
+.theme-dark {
+  --color-primary: #fff;
+  --color-secondary: #fff;
+  --bg-body: @color-gray-700;
+  --bg-primary: @color-gray-600;
+}
+
+// fonts 
+@font-secondary: 'IBM Plex Serif', 'IBM Plex Serif Local';
+
+// typography
+@fz-h1: 36px;
+@lh-h1: 1.3;
+
+@fz-h2: 30px;
+@lh-h2: 1.3;
+
+@fz-h3: 26px;
+@lh-h3: 1.2;
+
+@fz-h4: 23px;
+@lh-h4: 1.2;
+
+@fz-h5: 21px;
+@lh-h5: 1.2;
+
+@fz-text1: 16px;
+@lh-text1: 1.5;
+
+@fz-primary: 15px;
+@lh-primary: 1.5;
+
+@fz-secondary: 15px;
+@lh-secondary: 1.5;
+
+@fz-details: 14px;
+@lh-details: 1.4;
+
+@fz-category: 13px;
+@lh-category: 1;
+@ls-category: 0.02em;
+
+// media query breakpoints
+@screen-xs: 480px;
+@screen-xs-min: @screen-xs;
+@screen-phone: @screen-xs-min;
+@screen-sm: 768px;
+@screen-sm-min: @screen-sm;
+@screen-tablet: @screen-sm-min;
+@screen-md: 992px;
+@screen-md-min: @screen-md;
+@screen-desktop: @screen-md-min;
+@screen-lg: 1230px;
+@screen-lg-min: @screen-lg;
+@screen-lg-desktop: @screen-lg-min;
+@screen-xl: 1600px;
+@screen-xl-min: @screen-xl;
+@screen-xs-max: (@screen-sm-min - 1);
+@screen-sm-max: (@screen-md-min - 1);
+@screen-md-max: (@screen-lg-min - 1);
+@screen-lg-max: (@screen-xl-min - 1);
+
+// grid settings
+@grid-columns: 12;
+@grid-gutter-width: 20px;
+@grid-outer-margin: 20px;
+@grid-gutter-compensation: -@grid-gutter-width*0.5;
+@half-gutter-width: @grid-gutter-width*0.5;
+
+@container-tablet: (720px + @grid-gutter-width);
+@container-sm: @container-tablet;
+@container-desktop: (940px + @grid-gutter-width);
+@container-md: @container-desktop;
+@container-large-desktop: (1180px + @grid-gutter-width);
+//@container-large-desktop: (1172px + @grid-gutter-width);
+@container-lg: @container-large-desktop;
+
+// others
+@border-gray: 1px solid #E0E0E0;

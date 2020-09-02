@@ -1,0 +1,13 @@
+.atomLoop(@prop, @vals, @step, @max, @class, @units: px) when (@vals <= abs(@max)) {
+	.@{class}@{vals} {
+		@{prop}: unit(@vals, @units);
+	}
+	.atomLoop(@prop, @vals: @vals + @step, @step, @max, @class, @units); 
+}
+
+.atomLoopWithMediaQuery(@prop, @vals, @step, @max, @class, @mq, @units: px) when (@vals <= abs(@max)) {
+	.@{class}@{vals}-@{mq} {
+		@{prop}: unit(@vals, @units);
+	}
+	.atomLoopWithMediaQuery(@prop, @vals: @vals + @step, @step, @max, @class, @mq, @units); 
+}

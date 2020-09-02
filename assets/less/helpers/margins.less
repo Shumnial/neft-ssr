@@ -1,0 +1,19 @@
+.atomLoop(margin-bottom, -50, 5, 50, mb);
+.atomLoop(margin-top, -50, 5, 50, mt);
+.atomLoop(margin-right, -25, 5, 25, mr);
+.atomLoop(margin-left, -25, 5, 25, ml);
+
+@media screen and (max-width: @screen-md) {
+  .atomLoopWithMediaQuery(margin-bottom, -50, 5, 50, mb, md);
+  .atomLoopWithMediaQuery(margin-top, -50, 5, 50, mt, md);
+}
+
+@media screen and (max-width: @screen-sm) {
+  .atomLoopWithMediaQuery(margin-bottom, -50, 5, 50, mb, sm);
+  .atomLoopWithMediaQuery(margin-top, -50, 5, 50, mt, sm);
+}
+
+@media screen and (max-width: @screen-xs) {
+  .atomLoopWithMediaQuery(margin-bottom, -50, 5, 50, mb, xs);
+  .atomLoopWithMediaQuery(margin-top, -50, 5, 50, mt, xs);
+}

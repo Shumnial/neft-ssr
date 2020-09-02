@@ -1,0 +1,19 @@
+.atomLoop(padding-bottom, -50, 5, 50, pb);
+.atomLoop(padding-top, -50, 5, 50, pt);
+.atomLoop(padding-right, -25, 5, 25, pr);
+.atomLoop(padding-left, -25, 5, 25, pl);
+
+@media screen and (max-width: @screen-md) {
+  .atomLoopWithMediaQuery(padding-bottom, -50, 5, 50, pb, md);
+  .atomLoopWithMediaQuery(padding-top, -50, 5, 50, pt, md);
+}
+
+@media screen and (max-width: @screen-sm) {
+  .atomLoopWithMediaQuery(padding-bottom, -50, 5, 50, pb, sm);
+  .atomLoopWithMediaQuery(padding-top, -50, 5, 50, pt, sm);
+}
+
+@media screen and (max-width: @screen-xs) {
+  .atomLoopWithMediaQuery(padding-bottom, -50, 5, 50, pb, xs);
+  .atomLoopWithMediaQuery(padding-top, -50, 5, 50, pt, xs);
+}
